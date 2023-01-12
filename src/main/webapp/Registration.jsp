@@ -19,7 +19,7 @@
 	</select><br><br>
 	<input type="submit" value="Register">
 	<input type="reset" value="clear">
-	
 	</form>
+	<a href="viewAllStudents">View AllStudents</a>
 </body>
 </html>

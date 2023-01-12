@@ -1,5 +1,7 @@
 package com.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,5 +20,10 @@ public class RegistrationService {
 	
 	public void studentRegistrationService(Student s) {
 		dao.studentRegistrationDAO(s);
+	}
+	
+	public List<Student> viewAllStudentsService(){
+		List<Student> allStudents=dao.viewAllStudentsDAO();
+		return allStudents;
 	}
 }
